@@ -1,0 +1,54 @@
+.board {
+  display: grid;
+  background: rgba(255, 255, 255, 0.3);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 700px;
+  height: 700px;
+  grid-gap: 7px;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1400px) {
+  .board {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .board {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .board {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.start_btn_wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 7;
+  padding: 4vw 0vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1.2;
+  padding-bottom: 4vw;
+}

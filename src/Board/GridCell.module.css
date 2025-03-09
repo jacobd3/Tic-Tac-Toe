@@ -1,0 +1,29 @@
+.grid_cell {
+  background: rgba(0, 0, 0, 0.6);
+  --border-radius: 15px;
+  color: white;
+  display: grid;
+  font-size: 7rem;
+  font-family: "Lilita One", sans-serif;
+  place-content: center;
+}
+
+.grid_cell:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+.grid_cell:nth-child(3) {
+  border-top-right-radius: var(--border-radius);
+}
+
+.grid_cell:nth-child(7) {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.grid_cell:nth-child(9) {
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.grid_cell:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
